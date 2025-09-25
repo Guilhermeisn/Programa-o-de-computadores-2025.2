@@ -1,0 +1,13 @@
+# 02 - Desenvolva um programa em Python que solicite ao usuário os valores da base maior, base menor e altura
+# de um trapézio e, em seguida, calcule e exiba a sua área. Utilize a fórmula da área do trapézio.
+
+baseB = float(input('Digite o valor da base maior'))
+baseb = float(input('Digite o valor da base menor'))
+altura = float(input('Digite o valor da altura'))
+
+areaTrap = (baseB + baseb) * altura / 2
+
+print(f'A área do trapézio é: {areaTrap}')
+
+# De outro jeito
+print('A área do trapézio é: ',areaTrap,)
