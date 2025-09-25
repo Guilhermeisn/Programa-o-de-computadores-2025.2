@@ -1,0 +1,5 @@
+numero1 = 5
+numero2 = 100
+
+mult = numero1 * numero2
+print(mult)
