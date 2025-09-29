@@ -1,0 +1,10 @@
+# Faça um programa para calcular média de uma disciplina no IFRN, sabendo que são duas notas e que o peso da primeira nota é 2 e o peso da segunda nota é 3.
+
+nota1 = int(input('Escreva o valor da nota 1'))
+nota2 = int(input('Escreva o valor da nota 2'))
+média = (nota1 * 2) + (nota2 * 3) / 5
+
+print(f'A média é: {média}')
+
+
+
