@@ -19,3 +19,22 @@
 '''
 
 # Usar if not & exit()
+
+nota1 = int(input('Digite o valor da nota 1:'))
+nota2 = int(input('Digite o valor da nota 2'))
+
+média = (nota1*2) + (nota2*3) / 5
+
+cargaHorária = int(input('Digite a carga horária:'))
+faltas = int(input('Digite a quantidade de faltas:'))
+
+frequência = 1 - (faltas/cargaHorária) * 100, 1
+
+if média >= 60 and frequência >= 75:
+   print('Aprovado.')
+elif média >= 20 and frequência >= 75:
+   print('Prova final.')
+else:
+   print('Reprovado.')
+
+# ,.,
