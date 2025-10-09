@@ -1,0 +1,37 @@
+'''
+
+   Faça um programa que solicite ao usuário um número de até 4 dígitos inteiro positivo e exiba a soma dos seus algarismos.
+
+   Exemplo: 2456 = 17 (2 + 4 + 5 + 6)
+
+   DICA: Vocês irão usar o operador de divisão inteira (//) e o operador de resto de divisão inteiro (%)
+
+'''
+
+# Input do número
+
+num = int(input('Digite um número de até 4 dígitos. '))
+
+# Condicional se os dígitos forem maiores que 4
+if num > 9999:
+    print('O valor máximo é 4 dígitos.')
+
+# (INCOMPLETO) Condicional se o número for 0 ou negativo
+elif num <= 0:
+    print('O número não pode ser 0 ou negativo.')
+
+# Condicional se os dígitos estiverem entre 1 e 4
+else:
+    print(f'O número digitado foi: {num}.')
+
+    # (INCOMPLETO) Print soma dos algarismos
+    print(f'A soma dos algarismos desse número é: {num}.')
+
+
+# (INCOMPLETO) Variáveis solicitadas
+
+divInt = '//'
+divResto = '%'
+
+
+
