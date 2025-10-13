@@ -1,0 +1,39 @@
+'''
+   Crie um programa que calcula o salário semanal de um funcionário.
+   
+   O programa deve solicitar o número de horas trabalhadas na semana e o 
+   valor que ele recebe por hora. A jornada de trabalho padrão é de 40 horas 
+   semanais. Horas trabalhadas acima de 40 devem ser pagas com um adicional 
+   de 50% (o valor da hora extra é 1.5 vezes o valor da hora normal). 
+   
+   O programa deve exibir o salário total. 
+   
+   Garanta que o programa trate o caso de o usuário digitar valores não 
+   numéricos.
+'''
+
+import sys
+
+# Solicitando as horas trabalhadas
+horasTrab = int(input('Digite a quantidade de horas trabalhadas:'))
+
+if horasTrab == str:
+    sys.exit('Valor inadequado, por favor insira um número.')
+
+# Solicitando o valor recebido por hora
+vlrHora = int(input('Digite o valor recebido por hora'))
+
+# Jornada de trabalho
+jornadaTrab = 40
+
+# Hora extra
+horaExt = int(input('Digite as horas extras trabalhadas.'))
+horaExt = horasTrab * 1.5
+
+# Multiplicação das horas extras
+multExt = horaExt %50
+
+# Cálculo do salário
+salário = (horasTrab * vlrHora) * (jornadaTrab * horaExt) * multExt
+print(f'O salário total é: {salário}.')
+
