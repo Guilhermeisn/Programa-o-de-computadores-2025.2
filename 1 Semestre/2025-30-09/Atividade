@@ -1,0 +1,40 @@
+'''
+   Faça um programa para calcular média e a frequência de uma disciplina 
+   no IFRN.
+
+   Sabe-se que são duas notas e que o peso da primeira nota é 2
+   e o peso da segunda nota é 3 e que as notas são compreendidas entre
+   0 e 100.
+
+   Caso as notas não sejam válidas, deve-se informar ao usuário e sair do 
+   programa.
+
+   Sabe-se também que para se calcular a frequência, deve-se informar a carga 
+   horária da disciplina (em horas/aula) e a quantidade de faltas do aluno.
+
+   - Teste 1: Nota1 = 50 e Nota2 = 65
+   - Teste 2: Nota1 = 73 e Nota2 = 19
+   - Teste 3: Nota1 = 72 e Nota2 = 29
+   - Teste 4: Nota1 = 10 e Nota2 = 21
+'''
+
+# Usar if not & exit()
+
+nota1 = int(input('Digite o valor da nota 1:'))
+nota2 = int(input('Digite o valor da nota 2'))
+
+média = (nota1*2) + (nota2*3) / 5
+
+cargaHorária = int(input('Digite a carga horária:'))
+faltas = int(input('Digite a quantidade de faltas:'))
+
+frequência = 1 - (faltas/cargaHorária) * 100, 1
+
+if média >= 60 and frequência >= 75:
+   print('Aprovado.')
+elif média >= 20 and frequência >= 75:
+   print('Prova final.')
+else:
+   print('Reprovado.')
+
+# ,.,
