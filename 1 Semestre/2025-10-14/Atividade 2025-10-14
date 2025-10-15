@@ -1,0 +1,35 @@
+'''
+   Escreva um programa que pede ao usuário para inserir um Ano e 
+   determina se ele é bissexto ou não. 
+   
+   Um Ano é bissexto se atender a uma das seguintes regras:
+
+      - É divisível por 4, mas não é divisível por 100.
+
+      - É divisível por 400.
+
+      (Por exemplo, 2000 e 2400 são bissextos; 1800, 1900 e 2100 não são). 
+      
+   O programa deve exibir "O Ano [Ano] é bissexto." ou 
+   "O Ano [Ano] não é bissexto.". 
+   
+   Use try...except para validar a entrada.
+'''
+
+# Importando sistema
+import sys
+
+# Try e exceptions
+try:
+
+# Imput do ano
+    Ano = int(input('Digite um ano.'))
+
+# Analisando se o ano é divisível por 4, não por 100 e se é por 400 (bissexto)
+    if (Ano % 4 == 0 and Ano % 100 != 0) or Ano % 400 == 0:
+        print(f'O ano {Ano} é um ano bissexto.')
+    else:
+        print(f'O ano {Ano} não é um ano bissexto.')
+
+except ValueError:
+    sys.exit('O valor digitado não é aceito. Por favor insira um ano.')
