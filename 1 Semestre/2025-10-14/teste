@@ -1,0 +1,6 @@
+Num = int(input('Digite um número.'))
+
+if Num % 4 == 0
+    print(f'O número {Num} é divisível por 4.')
+else:
+        print(f'O número {Num} não é divisível por 4.')
