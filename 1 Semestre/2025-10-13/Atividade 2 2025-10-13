@@ -1,0 +1,45 @@
+'''
+   Desenvolva um programa que calcula o IMC de uma pessoa. 
+   
+   O programa deve pedir o peso em quilogramas (ex: 70.5) e a 
+   altura em metros (ex: 1.75). 
+   
+   A fórmula do IMC é: peso / (altura * altura). 
+   
+   Após calcular o IMC, o programa deve exibir o valor e a 
+   classificação correspondente, de acordo com a tabela:
+
+      - Abaixo de 18.5: Abaixo do peso
+      - 18.5 a 24.9: Peso ideal
+      - 25.0 a 29.9: Sobrepeso
+      - 30.0 a 34.9: Obesidade Grau I
+      - Acima de 35.0: Obesidade Grau II
+
+   O programa deve tratar entradas inválidas (não numéricas) e 
+   também verificar se a altura informada é maior que zero para evitar 
+   um erro de divisão.      
+'''
+
+import sys
+
+try:
+    peso = float(input('Digite o seu peso em quilogramas: '))
+    altura = float(input('Digite sua altura em metros: '))
+    IMC = peso / (altura * altura)
+
+except ValueError:
+    sys.exit('ERRO: Só insira valores numéricos.')
+
+if IMC < 18.5:
+    print('Você está abaixo do peso.')
+
+if IMC >= 18.5 and IMC < 24.9:
+    print('Você está no peso ideal.')
+
+if IMC >= 30.0 and IMC < 34.9:
+    print('Você está em Obesidade Grau 1.')
+
+if IMC > 35.0:
+    print('Você está em Obesidade Grau 2.')
+
+# IMPORTANTE: Faltou só o erro de divisão por zero

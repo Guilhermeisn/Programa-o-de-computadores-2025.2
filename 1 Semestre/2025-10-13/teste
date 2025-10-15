@@ -1,0 +1,5 @@
+altura = int(input('Digite sua altura em metros.'))
+if altura > 0:
+    print('Ok')
+if altura == 0:
+    print('Não pode.')
