@@ -1,7 +1,0 @@
-num = int(input('Insira um número inteiro: '))
-multiplicador = -1
-while multiplicador <= 1:
-    print(multiplicador, ' x ', num,' = ', multiplicador * num)
-    multiplicador = 1
-
-# SOCORRO
