@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+
+
+intContador = 1
+while intContador <= 100:
+    # Verifica se o número é par ou impar e acumula a soma
+    if intContador % 2 == 0:
+        intSomaPares += intContador
+    else:
+        intSomaImpares += intContador
+    # Incrementa o contador
+    intContador += 1
+
+''' Versão com FOR '''
+# Exibição dos resultados
+print(f'Soma dos números pares.....: {intSomaImpares}')
+print(f'Soma dos númreos ímpares .: {intSomaImpares}')
