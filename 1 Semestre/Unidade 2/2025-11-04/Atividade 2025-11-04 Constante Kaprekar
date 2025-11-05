@@ -1,0 +1,6 @@
+número = int(input('Digite um número de 4 dígitos: '))
+número2 = número
+número2.sort()
+print(número2)
+
+# Depois corrijo e continuo

@@ -1,0 +1,15 @@
+# Obtendo o input do número.
+número = int(input('Por favor, insira um número.'))
+
+# Condicionais se o número for primo ou não e imprimindo o resultado.
+if (número / 1) and nú
+
+
+''' Reutilizar caso necessário
+if (número / 1) and (número / número):
+    print(f'O número {número} é um número primo.')
+else:
+    print(f'O número {número} não é um número primo.')
+'''
+
+# Depois continuo
