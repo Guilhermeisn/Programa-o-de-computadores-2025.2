@@ -1,0 +1,17 @@
+from logging import exception
+import sys
+
+try:
+    intNumero = int(input('Digite um número inteiro: '))
+
+''''''
+
+
+
+
+
+
+except exception 
+else:
+    if intNumero <2:
+        sys.exit(f'O número {')

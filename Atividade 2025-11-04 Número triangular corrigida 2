@@ -1,0 +1,22 @@
+from multiprocessing.sharedctypes import Value
+import sys, math
+
+try:
+    intNumero = int(input('Digite um número inteiro: '))
+except ValueError:
+        sys.exit('AVISO: Programa interrompido pelo usuário...')
+except Exception as e:
+    sys.exit(f'ERRO: {e}')
+else:
+    # Números traingulares são positivos
+    if intNumero < 1:
+        sys.exit(f'O número {intNumero} não é triangular.')
+
+    # Verifica se o número é triangular
+    # https://pt.wikipedia.org/wiki/N%C3%BAmero_triangular
+
+    # Aplica a fórmula inversa: n = (-1 + sqrt(1 + 8*num)) / 2
+    intPosicao = ( - 1 + math.isqrt(1 + 8 * intNumero) ) / 2
+
+    if intPosicao.is_integer() and intPosicao > 1:
+        print(f'O número {intNumero} ')
