@@ -1,0 +1,33 @@
+'''
+[1] 
+
+i = ?
+*
+**
+***
+****
+*****
+WHILE e FOR
+'''
+
+'''
+[2]
+
+i = ?
+*
+**
+***
+****
+***
+**
+*
+WHILE e FOR
+'''
+
+# [Utilizando FOR]
+
+Num = input('Insira um número para fazer uma escadinha: ')
+
+for Letra in Num:
+    print(Num)
+

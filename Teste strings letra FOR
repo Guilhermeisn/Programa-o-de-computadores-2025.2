@@ -1,0 +1,12 @@
+strTexto = input('Digite algo: ')
+
+for letra in strTexto:
+    print(letra)
+
+# Utilizando o método escadinha.
+
+strAux = ''
+
+for Letra in strTexto:
+    strAux += Letra
+    print(strAux)

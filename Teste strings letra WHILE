@@ -1,0 +1,13 @@
+strTexto = input('Digite algo: ')
+
+intPos = 0
+while intPos < len(strTexto):
+    print(strTexto[intPos])
+    intPos += 1
+
+# Utilizando o método escadinha.
+
+intPos = 1
+while intPos <=len(strTexto):
+    print(strTexto[:intPos])
+    intPos += 1

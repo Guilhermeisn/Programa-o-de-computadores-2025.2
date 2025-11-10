@@ -1,0 +1,7 @@
+strNome = 'Rio Grande do Norte'
+print(strNome)
+print(strNome[8])
+print(strNome[-3])
+print(strNome[1:5])
+print(strNome[:10])
+print(strNome[10:])

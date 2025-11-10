@@ -1,0 +1,7 @@
+strSenha = '123mudar' # Pode acrescentar um .lower() para já guardar a Senha como minúsculo
+strEntrada = input('Digite a senha: ')
+
+if strEntrada == strSenha:
+    print('Senha correta!')
+else:
+    print('Senha incorreta.')

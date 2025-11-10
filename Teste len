@@ -1,0 +1,7 @@
+Nome = input('Digite algo: ')
+lenNome = len(Nome)
+
+print(f'A palavra {Nome} possui {lenNome} caracteres.')
+
+print(f'Em minúsculo ela fica da seguinte forma: {Nome.lower()} ')
+print(f'E em maíusculo, assim: {Nome.upper()} ')
