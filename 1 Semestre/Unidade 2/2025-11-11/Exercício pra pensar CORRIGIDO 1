@@ -1,0 +1,9 @@
+# [Questão 1]
+intQt = 5
+for i in range(1, intQt + 1):
+    print('*' * i)
+
+i = 1
+while i <= intQt:
+    print('*' * i)
+    i += 1

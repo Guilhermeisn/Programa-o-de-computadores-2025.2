@@ -27,7 +27,10 @@ WHILE e FOR
 # [Utilizando FOR]
 
 Num = input('Insira um número para fazer uma escadinha: ')
+strAux = ''
 
 for Letra in Num:
-    print(Num)
-
+    strAux += Letra
+    print(Letra)
+    
+# NÃO VAI

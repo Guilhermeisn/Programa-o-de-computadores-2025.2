@@ -1,0 +1,7 @@
+strTexto = input('Digite algo: ')
+for letra in strTexto:
+    if letra != ' ': #
+        print(letra, end='') #
+else: # 
+    print('') #-> Pode ser: print(letra, end='' if letra !='' else '\n')
+
