@@ -1,0 +1,9 @@
+strTexto = input('Digite algo:')
+strVogais = 'aeiouáéíóúâêîôûãõ'
+intContador = 0
+
+for letra in strTexto.lower():
+    if letra in strVogais:
+        intContador += 1
+
+print(f'Qte. vogais = {intContador}')

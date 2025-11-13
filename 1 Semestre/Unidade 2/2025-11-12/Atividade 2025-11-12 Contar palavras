@@ -1,0 +1,16 @@
+'''
+   Exemplo 02: Programa para contar quantas palavras existem em uma frase
+   fornecida pelo usuário.
+'''
+
+Frase = input('Insira um texto: ')
+Palavras = ' '
+Contador = 1
+
+for letra in Frase:
+    if letra in Palavras:
+        Contador += 1
+        print(f'Na frase {Frase}, há {Contador} palavras.')
+        
+if Contador == 1:
+    print(f'Só há uma palavra na frase {Frase}.')

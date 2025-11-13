@@ -1,0 +1,17 @@
+'''
+   Exemplo 01: Programa para contar quantas vogais existem em uma string 
+   fornecida pelo usuário.
+'''
+
+Texto = input('Insira um texto: ')
+Vogais = 'a', 'e', 'i', 'o', 'u','á', 'é', 'í', 'ó', 'ú', 'ã', 'ê', 'î', 'õ', 'û'
+Contador = 0
+
+for letra in Texto.lower():
+    if letra in Vogais:
+        Contador += 1
+        print(f'Na palavra {Texto}, há {Contador} vogais.')
+        
+if Contador == 0:
+    print(f'Nenhuma vogal encontrada na palavra {Texto}.')
+

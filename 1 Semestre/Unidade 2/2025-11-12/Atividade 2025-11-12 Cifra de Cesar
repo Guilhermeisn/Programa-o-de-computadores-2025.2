@@ -1,0 +1,18 @@
+'''
+   Exemplo 03: Programa para aplicar a Cifra de Cesar em uma mensagem 
+   fornecida pelo usuário.
+
+   A mensagem só pode conter letras maiúsculas (sem acentos), letras 
+   minúsculas (sem acentos) e espaços.
+'''
+
+Texto = str(input('Insira um texto: '))
+Chave = int(input('Insira uma chave para o código: '))
+Contador = 0
+
+for letra in Texto:
+        Contador += 1
+        TextoCript = Texto =+ Contador
+        print(f'A frase criptografada fica: {TextoCript}.')
+
+# Não funcionou 😭
