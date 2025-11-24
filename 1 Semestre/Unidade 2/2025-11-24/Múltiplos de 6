@@ -1,0 +1,16 @@
+import sys
+
+try:
+    intLim = int(input('Informe o limite: '))
+except ValueError:
+    sys.exit('...')
+
+
+
+if intLim <= 0:
+    sys.exit('...')
+
+lstMultiplos = list()
+for i in range (1, intLim + 1):
+    if i % 6 == 0:
+        lstMultiplos.append(i)

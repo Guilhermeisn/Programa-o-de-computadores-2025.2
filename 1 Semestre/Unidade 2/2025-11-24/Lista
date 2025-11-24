@@ -1,0 +1,11 @@
+lstNumeros = list()
+intLimite = 100
+
+for intValor in range (intLimite):
+    lstNumeros.append(intValor)
+
+for x in lstNumeros:
+    if x %2 == 0:
+        print(f'{x} é par!')
+    else:
+        print(f'{x} é ímpar!')

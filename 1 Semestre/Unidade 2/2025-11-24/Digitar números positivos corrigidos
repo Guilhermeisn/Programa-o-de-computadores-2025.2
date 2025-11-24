@@ -1,0 +1,21 @@
+from cmath import e
+
+
+lstValores = list()
+intValor = -1
+
+while intValor != 0:
+    try:
+        intValor = int(input('...'))
+    except ValueError:
+        print('...')
+    except Exception as e:
+        print(e)
+    else:
+        if intValor > 0:
+            lstValores.append(intValor)
+        elif intValor < 0:
+            print('...')
+        else:
+            print('...')
+    print(lstValores)
