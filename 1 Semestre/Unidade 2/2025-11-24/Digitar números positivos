@@ -1,0 +1,11 @@
+Numeros = ''
+while Numeros != 0:
+    Numeros = int(input('Informe um número (POSITIVO) ou 0 para encerrar o programa. '))
+    if Numeros < 0:
+        print('[ERRO]: O número precisa ser positivo.')
+    else:
+        print(Numeros)
+if Numeros == 0:
+    print('Fim do programa.')
+
+# No final só aprendi a fazer o while
