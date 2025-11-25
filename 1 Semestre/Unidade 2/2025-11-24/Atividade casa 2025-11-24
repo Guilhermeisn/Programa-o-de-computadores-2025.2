@@ -31,6 +31,18 @@ while intValor != 0:
 print('Lista de valores informados:')
 print(lstValores)
 
+soma = sum(lstValores)
+print (f'A soma dos valores da lista é: {soma}')
+
+média = soma / len(lstValores)
+print(f'A média dos valores da lista é: {média}')
+
+maiorN = max(lstValores)
+print(f'O maior número da lista é: {maiorN}, na posição: {lstValores.index(maiorN)}')
+
+menorN = min(lstValores)
+print(f'O menor número na lista é: {menorN}, na posição: {lstValores.index(menorN)}')
+
 # Qual a soma?
 # Qual a média?
 # Qual o maior n? Posição?
