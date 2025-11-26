@@ -1,0 +1,28 @@
+'''
+   A partir da variável intQtValores, gere uma lista com a quantidade de valores 
+   inteiros aleatórios entre 1 e 100, sem repetição. 
+   
+   Em seguida, o programa deve exibir:
+
+   - A lista gerada
+   - A soma dos valores na lista
+   - A média dos valores na lista
+   - O maior valor na lista
+   - O menor valor na lista
+   - A mediana dos valores na lista
+   - A variância dos valores na lista
+   - O desvio padrão dos valores na lista
+'''
+
+import random
+
+intQtValores = 20
+numeroRandom = random.randint(0,100)
+
+for i in range(1, numeroRandom):
+   print(i)
+print('Lista gerada aí em cima galalau')
+
+# Soma
+Soma = sum(numeroRandom)
+print(f'A soma dessa lista é: {Soma}')
