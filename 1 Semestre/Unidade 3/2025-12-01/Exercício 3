@@ -1,0 +1,25 @@
+'''
+   Reescreva o código do exercício anterior, mas desta vez utilizando listas
+   compostas (listas dentro de listas) para armazenar as informações dos alunos.
+'''
+
+Alunos = []
+
+nomesLim = 5
+
+while len(Alunos) < nomesLim:
+    Nomes = input("Digite o nome para inserir na lista de nomes dos alunos: ")
+    Notas1 = float(input("Digite o vaolr da nota da Etapa 1: "))
+    Notas2 = float(input("Digite o valor da nota da Etapa 2: "))
+    
+    Médias = (Notas1 * 2 + Notas2 * 3) / 5
+
+    Alunos.append([Nomes, Notas1, Notas2, Médias])
+
+print("\nNome do Aluno        Etapa 1   Etapa 2   Média")
+print("------------------------------------------------")
+
+for i in range(len(Alunos)):
+    print(f"{Nomes[i]:20} {Notas1[i]:7.0f}   {Notas2[i]:7.0f}   {Médias[i]:7.0f}")
+
+print("------------------------------------------------")
