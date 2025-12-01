@@ -32,7 +32,19 @@ lstNotas1 = []
 lstNotas2 = []
 lstMedias = []
 
-Nomes = input("Digite o nome para inserir na lista de nomes dos alunos: ")
-lstNomes.append(Nomes)
+nomesLim = 5
+Média = (lstNotas1 * 2) + (lstNotas2 * 3) / 5
 
-print(lstNomes)
+while len(lstNomes) < nomesLim:
+    Nomes = input("Digite o nome para inserir na lista de nomes dos alunos: ")
+    lstNomes.append(Nomes)
+
+Notas1 = int(input("Digite o vaolr da nota da Etapa 1: "))
+lstNotas1.append(Notas1)
+
+Notas2 = int(input("Digite o valor da nota da Etapa 2: "))
+lstNotas2.append(Notas2)
+
+print("Nome do Aluno          Etapa 1    Etapa 2    Média")
+print("--------------------------------------------------")
+print(f'{lstNomes[0]}     {lstNotas1[0]}     {lstNotas2}     {Média} ')
