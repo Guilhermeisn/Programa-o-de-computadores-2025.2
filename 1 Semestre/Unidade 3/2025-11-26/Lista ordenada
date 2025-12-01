@@ -1,0 +1,33 @@
+lstValores = ''
+
+
+
+
+# Mediana
+lstOrdenada = sorted(lstValores)
+
+# [a,b,c,d,e]
+# c é a Mediana
+
+# [a, b, c, d, e]
+# b + c / 2 é a Mediana
+
+if len(lstValores % 2 != 0):
+    Mediana = lstValores[len(lstValores)//2]
+    Mediana = (lstValores[len(lstValores)//2 - 1] + lstValores[len(lstValores)//2])/2
+
+# Variância
+media = sum(lstValores)/ len(lstValores)
+fltVariancia = 0
+for valor in lstValores:
+    fltVariancia += (valor - media)**2
+    fltVariancia /= len(lstValores)
+    print(fltVariancia)
+
+# lstV = [a, b, c, d, e]
+# media = sum(lstV)/ len(lstV)
+# Fórmula variância = [(a-media)**2), b(-media)**2,...]
+# (a-media)**2 + (b-media)**2+... / Qtd. Elementos da lista
+
+# Desvio padrão
+desvPadrão = fltVariancia * 0.5

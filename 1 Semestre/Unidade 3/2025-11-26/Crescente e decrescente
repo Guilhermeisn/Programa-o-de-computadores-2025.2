@@ -1,0 +1,12 @@
+lstValores = [5,1,4,2]
+print(lstValores)
+lstValores.sort (reverse = True) # Imprime em ordem decrescente
+print(lstValores)
+
+# Vai imprimir os números em ordem crescente
+
+lstOrdenada = sorted (lstValores)
+print(lstValores)
+# [5,1,4,2]
+print(lstOrdenada)
+# [1,2,4,5]
