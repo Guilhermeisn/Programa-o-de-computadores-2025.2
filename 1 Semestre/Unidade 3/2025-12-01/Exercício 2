@@ -44,7 +44,7 @@ while len(lstNomes) < nomesLim:
     Notas2 = float(input("Digite o valor da nota da Etapa 2: "))
     lstNotas2.append(Notas2)
 
-    Média = (Notas1 * 2) + (Notas2 * 3) / 5
+    Média = (Notas1 * 2 + Notas2 * 3) / 5
     lstMedias.append(Média)
 
 print("\nNome do Aluno        Etapa 1   Etapa 2   Média")
