@@ -45,7 +45,12 @@ while len(lstNomes) < nomesLim:
     lstNotas2.append(Notas2)
 
     Média = (Notas1 * 2) + (Notas2 * 3) / 5
+    lstMedias.append(Média)
 
-print("Nome do Aluno          Etapa 1    Etapa 2    Média")
-print("--------------------------------------------------")
-print(f'{lstNomes[0]}     {lstNotas1[0]}     {lstNotas2}     {Média} ')
+print("\nNome do Aluno        Etapa 1   Etapa 2   Média")
+print("------------------------------------------------")
+
+for i in range(len(lstNomes)):
+    print(f"{lstNomes[i]:20} {lstNotas1[i]:7.0f}   {lstNotas2[i]:7.0f}   {lstMedias[i]:7.0f}")
+
+print("------------------------------------------------")
