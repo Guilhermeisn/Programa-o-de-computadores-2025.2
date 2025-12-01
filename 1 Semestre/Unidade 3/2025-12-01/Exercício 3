@@ -20,6 +20,6 @@ print("\nNome do Aluno        Etapa 1   Etapa 2   Média")
 print("------------------------------------------------")
 
 for i in range(len(Alunos)):
-    print(f"{Nomes[i]:20} {Notas1[i]:7.0f}   {Notas2[i]:7.0f}   {Médias[i]:7.0f}")
+    print(f"{Alunos[0]:20} {Alunos[1]:7.0f}   {Alunos[2]:7.0f}   {Alunos[3]:7.0f}")
 
 print("------------------------------------------------")
