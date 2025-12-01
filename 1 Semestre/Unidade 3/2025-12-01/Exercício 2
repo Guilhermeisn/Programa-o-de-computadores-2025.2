@@ -33,6 +33,6 @@ lstNotas2 = []
 lstMedias = []
 
 Nomes = input("Digite o nome para inserir na lista de nomes dos alunos: ")
-lstNomes += Nomes
+lstNomes.append(Nomes)
 
 print(lstNomes)
