@@ -1,0 +1,9 @@
+# 1) Gerando a lista de valores únicos
+lstValores = list()
+i = 0
+while i < intQtValores:
+   intValor = random.randint(1, 100)
+   if intValor not in lstValores:
+      lstValores.append(intValor)
+      i += 1 
+print(f'Lista gerada.............: {lstValores}')

@@ -9,13 +9,7 @@ intQtValores = 20
 
 # ------------------------------------------------------------
 # 1) Gerando a lista de valores únicos
-lstValores = list()
-i = 0
-while i < intQtValores:
-   intValor = random.randint(1, 100)
-   if intValor not in lstValores:
-      lstValores.append(intValor)
-      i += 1 
+lstValores = random.sample(range(1, 101), intQtValores)
 print(f'Lista gerada.............: {lstValores}')
 
 # ------------------------------------------------------------
@@ -51,10 +45,7 @@ print(f'Mediana dos valores......: {fltMediana}')
 
 # ------------------------------------------------------------
 # 7) Exibindo a variância dos valores na lista
-fltVariancia = 0
-for intValor in lstValores:
-   fltVariancia += (intValor - fltMedia) ** 2
-fltVariancia /= len(lstValores)
+fltVariancia = sum((x - fltMedia) ** 2 for x in lstValores) / len(lstValores)
 print(f'Variância dos valores....: {fltVariancia:.2f}')
 
 # ------------------------------------------------------------
