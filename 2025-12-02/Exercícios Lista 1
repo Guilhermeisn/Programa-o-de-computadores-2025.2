@@ -1,0 +1,15 @@
+import sys
+
+try:
+    intQt = int(input(...))
+except ...
+...
+except...
+...
+else:
+    lstLista = [[1,1]]
+    for _ in range(1,intQt):
+        lstLista.append(lstLista[-1]+[lstLista[-1][-1] + lstLista[-1][-2]])
+        for i in lstLista:
+            print(i)
+

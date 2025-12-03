@@ -1,0 +1,10 @@
+intQt = 10
+lstLista = [[1,1]]
+
+for _ in range(1, intQt):
+    lstSubLista = [1]
+    for j in range(len(lstLista[-1]-1)):
+        intSoma = lstLista[-1][j+1]
+        lstSubLista.append(intSoma)
+    lstSubLista.append(1)
+    lstLista.append(lstSubLista)
