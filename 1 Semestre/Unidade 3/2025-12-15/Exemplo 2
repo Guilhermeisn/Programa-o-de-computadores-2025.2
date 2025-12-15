@@ -18,6 +18,7 @@ else:
     while True:
         linha = arqLeitura.readline().strip()
         if not linha: break
-        lstNumeros.append(linha)
+        intValor = int(linha)
+        lstNumeros.append(intValor)
     arqLeitura.close()
     print(lstNumeros)
