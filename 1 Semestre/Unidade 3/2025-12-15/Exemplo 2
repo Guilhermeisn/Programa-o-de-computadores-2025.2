@@ -1,0 +1,23 @@
+'''
+   Fazer um programa que leia o arquivo valores_1.txt, que contém números inteiros,
+   um por linha, gere uma lista contendo os números lidos e em seguida calcule a soma desses números e calcule a soma 
+   desses números. O programa deve exibir o resultado na tela.
+'''
+
+import os, sys
+
+try:
+    diretorio = os.path.dirname(__file__)
+    arqLeitura = open(f'{diretorio}/valores_1.txt','r')
+except FileNotFoundError:
+    sys.exit('Arquivo não encontrado!!!')
+except Exception as e:
+    sys.exit(f'Erro: {e}')
+else:
+    lstNumeros = list()
+    while True:
+        linha = arqLeitura.readline().strip()
+        if not linha: break
+        lstNumeros.append(linha)
+    arqLeitura.close()
+    print(lstNumeros)
