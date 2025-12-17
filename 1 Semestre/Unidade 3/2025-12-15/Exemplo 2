@@ -25,7 +25,8 @@ else:
    # Criando uma lista que irá guardar os números
    lstNumeros = list()
 
-   # Lendo o conteúdo do arquivo
+      # Lendo o conteúdo do arquivo
+   intErros = 0
    while True:
       # Lendo uma linha do arquivo e removendo caracteres 
       # de espaço em branco e caractere de nova linha (\n)
@@ -40,10 +41,12 @@ else:
       except ValueError:
          # Tratando o erro caso a conversão falhe
          print(f'ERRO: Valor inválido "{strLinha}" ignorado!')
+         intErro += 1
          continue
       except Exception as e:
          # Tratando outros erros genéricos
          print(f'ERRO: {e} ao processar o valor "{strLinha}" ignorado!')
+         intErro += 1
          continue
       
       # Adicionando o valor lido convertido em inteiro à lista
