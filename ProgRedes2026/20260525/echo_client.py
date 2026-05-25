@@ -8,7 +8,7 @@ while True:
     if msg:
         print (f"Enviando: {msg}")
         my_sock.sendto(msg, (SERVER, PORT))
-        answer, source = my_sock.recvrom(512)
+        answer, source = my_sock.recvfrom(512)
         print (f"Recebido de {source}: {answer}")
     else:
         break
