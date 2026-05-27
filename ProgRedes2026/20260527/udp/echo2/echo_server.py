@@ -3,7 +3,7 @@ from config import *
 
 my_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-my_ip = socket.gethostbyname(socket.gethostname())
+my_ip = '10.25.1.173'
 print (f"Escutando em ({my_ip}:{PORT})")
 my_sock.bind ((my_ip, PORT))
 
