@@ -15,3 +15,17 @@ server.bind((HOST, PORT))
 server.listen(5)
 
 print(f"Servidor ouvindo. Porta: {PORT}")
+
+while True:
+    client, addr = server.accept()
+
+    print(f"Conexão de {addr}")
+    Dados = client.recv(4096)
+
+    if Dados:
+        print("Recebido: ", Dados.encode())
+
+        Resposta = "Mensagem recebida com sucesso!"
+        client.send(Resposta.encode())
+
+    client.close()
