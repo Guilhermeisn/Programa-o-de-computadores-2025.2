@@ -4,3 +4,9 @@ server = socket.socket(socket.AF_INETM, socket.SOCK_DGRAM)
 server.bind(("0.0.0.0", 5000))
 
 print("Servidor UDP iniciado")
+
+while True:
+    data, addr = server.recfrom(1024)
+
+    print("Recebdo: ", data.decode())
+    server.sendto(b"Mensagem recebida", addr)
