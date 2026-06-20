@@ -9,3 +9,11 @@ HOST = sys.argv[1]
 PORT = int(sys.argv[2])
 MENSAGEM = sys.argv[3]
 
+Client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+Client.connect((HOST, PORT))
+Client.send(MENSAGEM.encode())
+Resposta = Client.recv(4096)
+
+print("Resposta:", Resposta.decode())
+Client.close()
