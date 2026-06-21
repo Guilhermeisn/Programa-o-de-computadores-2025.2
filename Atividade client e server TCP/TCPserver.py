@@ -23,7 +23,7 @@ while True:
     Dados = client.recv(4096)
 
     if Dados:
-        print("Recebido: ", Dados.encode())
+        print("Recebido: ", Dados.decode())
 
         Resposta = "Mensagem recebida com sucesso!"
         client.send(Resposta.encode())
